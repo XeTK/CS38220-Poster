@@ -57,6 +57,7 @@
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage[none]{hyphenat}
 
 \begin{document}
 
@@ -98,17 +99,32 @@ Email: \texttt{thr2@aber.ac.uk}\\ % Email address
 
 \begin{multicols}{4} % This is how many columns your poster will be broken into, a poster with many figures may benefit from less columns whereas a text-heavy poster benefits from more
 
+\color{Navy}
 \section{Abstract}
 
+\color{Olive}
 \section{Introduction}
 
+\color{Black}
 \section{Aims of the project}
 
 \section{Progress so far}
 
+Development of the application has reached a proof of concept stage of development, where users can generate messages for other users to view, and are picked up on the other users devices when they have entered a reasonable proximity to the message. The application has been developed in a eXtream Programming approach which means that the functionality of the application has only been implemented as it has been needed, this has been used in conjunction with a Test Driven Development approach which means that each bit of functionality within the application is robustly tested and when new functionality is added to the application that the new functionality does not break the application.\\
+\\
+The Android side of the application is very much a work in progress with very few of the components fully completed it has skeleton of the application to show the concept works, The server side part of the application is reaching maturity with the most of the functionality implemented where it has been needed with the underlying structure completed for the future functionality that will be added to the application, the design and implementation of the database is almost complete and with minor tweaks that will need to be applied as development proceeds, optimisation will need to be carried out on all levels of the application to ensure that the application is efficient and quick to use, consideration has been taken to this point but has yet to be implemented.
+
 \section{Technical details}
 
+Lo Se Sono is primarily an Android project but it does us a number of other technologies to make it work effectively, Additional technology that is used along side the standard Google Android SDK is the Google Maps API for Android this extra API enables the use of mapping within the application, and is the main API that is hooked into the application everything else within the application is either from the standard Android SDK or bespoke.\\ The location detection is carried out by the standard GPS package provided by the Android SDK and has been built up to enable more support for using GPRS data along side the use of GPS, the calculations algorithm for the distance was based off work by Chris Veness in the paper (Calculate distance, bearing and more between Latitude/Longitude points).\\
+\\
+The backend of the application uses the Node.JS runtime which is based of the Google Javascript engine, this is used in conjunction with HAPI.JS to provide a REST interface for the android application to interact with, HAPI provides its own security API's to interact with providing basic authentication for the application along with a primitive cookie based application system to give authentication to the end user. The Node/HAPI application provides a connecting piece between the Android application and the database, most of the processing and computation is carried out within the database engine.\\
+\\
+The database technology that has been used is PostgresSQL, this was chosen as it provides much more flexibility and extended functions over SQLite or MySQL, the application takes advantaged of the extensive JSON support provided by PostGresSQL along with the advanced Database functions to do fast processing within the database engine rather than context switching back to the Node application to carry out the work which in turn should make the application more responsive and should speed up processing. All of the authentication is handled within the database with the storing of user credentials and the hashing of the user passwords to ensure that they are stored safely, PostGresSQL provides all the hashing and encryption packages that are needed to ensure that sensitive data is stored safely.
+
 \section{Future development}
+
+\section{Acknowledgments}
 
 %----------------------------------------------------------------------------------------
 
