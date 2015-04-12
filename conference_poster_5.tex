@@ -108,6 +108,12 @@ Email: \texttt{thr2@aber.ac.uk}\\ % Email address
 \color{Black}
 \section{Aims of the project}
 
+Aims of location sensitive social notifier is to give users the ability to post tags onto specific locations and theses tags to be able to be picked up by there followers, this functionality is given to the users through the use of an Android application with a simple and intuitive user interface to allow them to easily post messages.\\
+\\
+For users that have the application installed one of the main aims of the application was to make it so that the users can easily pick up notifications and to also preserve power on the users device so that running the application does not drain the phones battery while trying to seek out users relevant tags.\\
+\\
+The concept of the application has be carried out before but using hardware tags as a focal point, so a user would add a bluetooth tag to a physical location and the phone would pick this up and deliver a message to the user, the goal of the project was to try and achieve this functionality without the use of a hardware device and just using the services provided by modern Android smartphones most notability GPS positioning to get the tags to the end user.
+
 \section{Progress so far}
 
 Development of the application has reached a proof of concept stage of development, where users can generate messages for other users to view, and are picked up on the other users devices when they have entered a reasonable proximity to the message. The application has been developed in a eXtream Programming approach which means that the functionality of the application has only been implemented as it has been needed, this has been used in conjunction with a Test Driven Development approach which means that each bit of functionality within the application is robustly tested and when new functionality is added to the application that the new functionality does not break the application.\\
@@ -116,7 +122,9 @@ The Android side of the application is very much a work in progress with very fe
 
 \section{Technical details}
 
-Lo Se Sono is primarily an Android project but it does us a number of other technologies to make it work effectively, Additional technology that is used along side the standard Google Android SDK is the Google Maps API for Android this extra API enables the use of mapping within the application, and is the main API that is hooked into the application everything else within the application is either from the standard Android SDK or bespoke.\\ The location detection is carried out by the standard GPS package provided by the Android SDK and has been built up to enable more support for using GPRS data along side the use of GPS, the calculations algorithm for the distance was based off work by Chris Veness in the paper (Calculate distance, bearing and more between Latitude/Longitude points).\\
+Lo Se Sono is primarily an Android project but it does us a number of other technologies to make it work effectively, Additional technology that is used along side the standard Google Android SDK is the Google Maps API for Android this extra API enables the use of mapping within the application, and is the main API that is hooked into the application everything else within the application is either from the standard Android SDK or bespoke.\\ 
+\\
+The location detection is carried out by the standard GPS package provided by the Android SDK and has been built up to enable more support for using GPRS data along side the use of GPS, the calculations algorithm for the distance was based off work by Chris Veness in the paper (Calculate distance, bearing and more between Latitude/Longitude points).\\
 \\
 The backend of the application uses the Node.JS runtime which is based of the Google Javascript engine, this is used in conjunction with HAPI.JS to provide a REST interface for the android application to interact with, HAPI provides its own security API's to interact with providing basic authentication for the application along with a primitive cookie based application system to give authentication to the end user. The Node/HAPI application provides a connecting piece between the Android application and the database, most of the processing and computation is carried out within the database engine.\\
 \\
@@ -124,7 +132,16 @@ The database technology that has been used is PostgresSQL, this was chosen as it
 
 \section{Future development}
 
+One of the major features that will be added later on development, will the ability to hook into the Facebook infrastructure, to discover friends and to share notification on their platform rather than being isolated from the greater social networking force, having Facebook infrastructure within should greatly improve adoption of the application and also easing the use of the application and adding users friends to the application.\\
+\\
+There is also the possibility of the development of a companion Pebble smartwatch application that will give the user the ability to quickly tag a location from there wrist with a list of pre-defined messages, this is an interesting nice to have and will help the penetration of the market with interesting ideas and help with the adoption of smart watches.\\
+\\
+If the application proves successful it is very likely that a iOS version of the application will be developed for Apple iPhones, this should help with the popularity of the application and should ensure that their is a much greater market coverage for the service.
+
 \section{Acknowledgments}
+
+Cian O'Shaughnessy - Graphics\\
+Chris Veness - GPS distance calculation algorithm\\
 
 %----------------------------------------------------------------------------------------
 
