@@ -112,16 +112,16 @@ This poster contains information on the development of the Android application L
 \color{Olive}
 \section{Introduction}
 
-This poster illustrates the development of Location Sensitive Social Notifier which is a location based messaging platform enables users to tag a specific location with a specific message and there followers on the application will be able to pickup theses messages when they are near by to the tag, the user is able to specify the range around the tag that the notification is triggered for the user. Each user of the application has the ability to comment on each tag that they have been added to and have the ability to add feedback to it, there is also the ability to have 'Public Tags' which is viewable by everyone with the application installed.\\
+This poster illustrates the development of Location Sensitive Social Notifier which is a location based messaging platform. This enables users to tag a specific location with a specific message and their followers on the application will be able to pick up these messages when they are nearby to the tag. The user is able to specify the range around the tag that the notification is triggered for the user. Each user of the application has the ability to comment on each tag that they have been added to and have the ability to add feedback to it. There is also the ability to have 'Public Tags' which is viewable by everyone with the application installed.\\
 \\
-Theses sorts of functionality could be very useful to users as it enables them to add give important information when users are near to a specific area. A good example of where this could be useful is if users were participating in a race and when the users hit a specific point in the race it throws up a notification on the phone saying "You have completed 3/4 of the race" or "There is free water 100m to the right.".\\
+These sorts of functionality could be very useful to users as it enables them to add important information when users are near to a specific area. A good example of where this could be useful is if users were participating in a race and when the users hit a specific point in the race it throws up a notification on the phone saying "You have completed 3/4 of the race" or "There is free water 100m to the right.".\\
 
 \begin{center}
 \includegraphics[width=0.39\linewidth]{notifications}
 \captionof{figure}{\color{Green} Example Notification}
 \end{center}
 
-When the project has been completed it will be open sourced so that anyone can work on it and improve the application to make it better suite peoples needs, The development has taken a agile approach using XP and FDD to ensure robust and usable code.
+When the project has been completed it will be open sourced so that anyone can work on it and improve the application to make it better suit peoples' needs. The development has taken an agile approach using XP and FDD to ensure robust and usable code.
 The application is currently a Proof Of Concept application and is quickly reaching a state where it can be sent out to testers to evaluate the user experience.\\
 
 \begin{center}
@@ -132,46 +132,46 @@ The application is currently a Proof Of Concept application and is quickly reach
 \color{Black}
 \section{Aims of the project}
 
-Aims of location sensitive social notifier is to give users the ability to post tags onto specific locations and theses tags to be able to be picked up by there followers, this functionality is given to the users through the use of an Android application with a simple and intuitive user interface to allow them to easily post messages.\\
+Aims of the location sensitive social notifier is to give users the ability to post tags onto specific locations and theses tags to be able to be picked up by their followers. This functionality is given to the users through the use of an Android application with a simple and intuitive user interface to allow them to easily post messages.\\
 
 \begin{center}
 \includegraphics[width=0.39\linewidth]{posting}
 \captionof{figure}{\color{Green} Posting A Message}
 \end{center}
 
-For users that have the application installed one of the main aims of the application was to make it so that the users can easily pick up notifications and to also preserve power on the users device so that running the application does not drain the phones battery while trying to seek out users relevant tags.\\
+For users that have the application installed one of the main aims of the application was to make it so that the users can easily pick up notifications and to also preserve power on the users device so that running the application does not drain the phone's battery while trying to seek out the user's relevant tags.\\
 \\
-The concept of the application has be carried out before but using hardware tags as a focal point, so a user would add a bluetooth tag to a physical location and the phone would pick this up and deliver a message to the user, the goal of the project was to try and achieve this functionality without the use of a hardware device and just using the services provided by modern Android smartphones most notability GPS positioning to get the tags to the end user.
+The concept of the application has been carried out before but using hardware tags as a focal point. So a user would add a bluetooth tag to a physical location and the phone would pick this up and deliver a message to the user. The goal of the project was to try and achieve this functionality without the use of a hardware device and just using the services provided by modern Android smartphones, most notability GPS positioning to get the tags to the end user.
 
 \section{Progress so far}
 
-Development of the application has reached a proof of concept stage of development, where users can generate messages for other users to view, and are picked up on the other users devices when they have entered a reasonable proximity to the message. The application has been developed in a eXtream Programming approach which means that the functionality of the application has only been implemented as it has been needed, this has been used in conjunction with a Test Driven Development approach which means that each bit of functionality within the application is robustly tested and when new functionality is added to the application that the new functionality does not break the application.\\
+Development of the application has reached a proof of concept stage of development, where users can generate messages for other users to view, and are picked up on the other users devices when they have entered a reasonable proximity to the message. The application has been developed in an eXtream Programming approach which means that the functionality of the application has only been implemented as it has been needed. This has been used in conjunction with a Test Driven Development approach which means that each bit of functionality within the application is robustly tested and when new functionality is added to the application that the new functionality does not break the application.\\
 
 \begin{center}
 \includegraphics[width=0.39\linewidth]{viewing}
 \captionof{figure}{\color{Green} Viewing of a tag}
 \end{center}
 
-The Android side of the application is very much a work in progress with very few of the components fully completed it has skeleton of the application to show the concept works, The server side part of the application is reaching maturity with the most of the functionality implemented where it has been needed with the underlying structure completed for the future functionality that will be added to the application, the design and implementation of the database is almost complete and with minor tweaks that will need to be applied as development proceeds, optimisation will need to be carried out on all levels of the application to ensure that the application is efficient and quick to use, consideration has been taken to this point but has yet to be implemented.
+The Android side of the application is very much a work in progress with very few of the components fully completed. It has a skeleton of the application to show the concept works. The server side part of the application is reaching maturity with most of the functionality implemented where it has been needed with the underlying structure completed for the future functionality that will be added to the application. The design and implementation of the database is almost complete and with minor tweaks that will need to be applied as development proceeds, optimisation will need to be carried out on all levels of the application to ensure that the application is efficient and quick to use. Consideration has been taken to this point but has yet to be implemented.
 
 \section{Technical details}
 
-Lo Se Sono is primarily an Android project but it does us a number of other technologies to make it work effectively, Additional technology that is used along side the standard Google Android SDK is the Google Maps API for Android this extra API enables the use of mapping within the application, and is the main API that is hooked into the application everything else within the application is either from the standard Android SDK or bespoke.\\ 
+Lo Se Sono is primarily an Android project but it does us a number of other technologies to make it work effectively. Additional technology that is used alongside the standard Google Android SDK is the Google Maps API for Android. This extra API enables the use of mapping within the application, and is the main API that is hooked into the application. Everything else within the application is either from the standard Android SDK or bespoke.\\ 
 \\
-The location detection is carried out by the standard GPS package provided by the Android SDK and has been built up to enable more support for using GPRS data along side the use of GPS, the calculations algorithm for the distance was based off work by Chris Veness in the paper (Calculate distance, bearing and more between Latitude/Longitude points).\\
+The location detection is carried out by the standard GPS package provided by the Android SDK and has been built up to enable more support for using GPRS data alongside the use of GPS. The calculations algorithm for the distance was based on work by Chris Veness in the paper (Calculate distance, bearing and more between Latitude/Longitude points).\\
 \\
-The backend of the application uses the Node.JS runtime which is based of the Google Javascript engine, this is used in conjunction with HAPI.JS to provide a REST interface for the android application to interact with, HAPI provides its own security API's to interact with providing basic authentication for the application along with a primitive cookie based application system to give authentication to the end user. The Node/HAPI application provides a connecting piece between the Android application and the database, most of the processing and computation is carried out within the database engine.\\
+The backend of the application uses the Node.JS runtime which is based on the Google Javascript engine. This is used in conjunction with HAPI.JS to provide a REST interface for the android application to interact with. HAPI provides its own security APIs to interact with providing basic authentication for the application along with a primitive cookie based application system to give authentication to the end user. The Node/HAPI application provides a connecting piece between the Android application and the database. Most of the processing and computation is carried out within the database engine.\\
 \\
-The database technology that has been used is PostgresSQL, this was chosen as it provides much more flexibility and extended functions over SQLite or MySQL, the application takes advantaged of the extensive JSON support provided by PostGresSQL along with the advanced Database functions to do fast processing within the database engine rather than context switching back to the Node application to carry out the work which in turn should make the application more responsive and should speed up processing. All of the authentication is handled within the database with the storing of user credentials and the hashing of the user passwords to ensure that they are stored safely, PostGresSQL provides all the hashing and encryption packages that are needed to ensure that sensitive data is stored safely.
+The database technology that has been used is PostgresSQL. This was chosen as it provides much more flexibility and extended functions over SQLite or MySQL. The application takes advantage of the extensive JSON support provided by PostGresSQL along with the advanced Database functions to do fast processing within the database engine rather than context switching back to the Node application to carry out the work which in turn should make the application more responsive and should speed up processing. All of the authentication is handled within the database with the storing of user credentials and the hashing of the user passwords to ensure that they are stored safely. PostGresSQL provides all the hashing and encryption packages that are needed to ensure that sensitive data is stored safely.
 
 \color{RosyBrown}
 \section{Future development}
 
-One of the major features that will be added later on development, will the ability to hook into the Facebook infrastructure, to discover friends and to share notification on their platform rather than being isolated from the greater social networking force, having Facebook infrastructure within should greatly improve adoption of the application and also easing the use of the application and adding users friends to the application.\\
+One of the major features that will be added later on in development, will be the ability to hook into the Facebook infrastructure, to discover friends and to share notification on their platform rather than being isolated from the greater social networking force. Having Facebook infrastructure within should greatly improve adoption of the application and also ease the use of the application in terms of adding user's friends.\\
 \\
-There is also the possibility of the development of a companion Pebble smartwatch application that will give the user the ability to quickly tag a location from there wrist with a list of pre-defined messages, this is an interesting nice to have and will help the penetration of the market with interesting ideas and help with the adoption of smart watches.\\
+There is also the possibility of the development of a companion Pebble smartwatch application that will give the user the ability to quickly tag a location from their wrist with a list of pre-defined messages. This is an interesting 'nice to have' and will help the penetration of the market with interesting ideas and help with the adoption of smart watches.\\
 \\
-If the application proves successful it is very likely that a iOS version of the application will be developed for Apple iPhones, this should help with the popularity of the application and should ensure that their is a much greater market coverage for the service.
+If the application proves successful it is very likely that an iOS version of the application will be developed for Apple iPhones. This should help with the popularity of the application and should ensure that there is a much greater market coverage for the service.
 
 \color{DeepSkyBlue}
 \section{Acknowledgments}
